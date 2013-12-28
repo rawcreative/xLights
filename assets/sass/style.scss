@@ -1,0 +1,96 @@
+$red : #CD362C;
+
+@import "compass";
+@import "normalize";
+
+* { @include box-sizing(border-box); }
+
+html {
+	position: relative;
+	min-height: 100%;
+
+}
+
+body {
+	background: #f1f1f1;
+	padding: 20px;
+	margin: 0 0 300px;
+
+}
+
+header {
+	margin-bottom: 20px;
+	padding: 20px 0;
+	.logo {
+		width: 260px;
+		margin: 0 auto 15px;
+	}
+}
+
+.main {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+
+	h1 {
+		font-size: 20px;
+		margin-bottom: 15px;
+		color: #444;
+	}
+
+	.ver {
+		color: #666;
+		text-transform: capitalize;
+		font-size: 14px;
+		margin: 20px 0 0;
+	}
+}
+
+.buttons {
+	padding: 15px 0;
+	margin-bottom: 15px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 14px;
+	border-radius: 3px;
+	border: 1px solid #aaa;
+	background: #eee;
+	text-decoration: none;
+	color: #666;
+	margin: 5px;
+	font-size: .9em;
+	@include transition(all 0.25s linear);
+	&:hover {
+		background: $red;
+		color: white;
+		border-color: $red;
+	}
+}
+.app-shots {
+	width: 100%;
+	//padding-top: 30px;
+	height: 300px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		width: auto;
+		height: 100%;
+	}
+}
+footer {
+	display: none;
+	// position: absolute;
+	// bottom: 0;
+	// left: 0;
+	// width: 100%;
+	// height: 40px;
+	// background: #444;
+	// padding: 20px;
+}
